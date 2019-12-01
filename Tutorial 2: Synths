@@ -1,0 +1,9 @@
+Tamam bu kadar intro yeterli. Biraz sese bakalım
+
+Bu bölümde brleşlerin (synth) çalıştırılması ve değiştirilmesini inceleyeceğiz. Brleş,ses çıkaran bir şey için süslü bir kelime olan 
+birleştiricinin kısaltılmış hali.
+Genelde brleşleri kullanmak biraz komplikedir, özellikle Eurorack modülleri gibi analog brleşler bir kablo karmaşası ile birbirlerine
+bağlandığı için bizi zor duruma sokar. Fakat, Sonic Pi bize bu brleşleri daha basit ve ulaşılabilir bir şekilde sunmaktadır.
+
+Sonic Pi arayüzünün basitliğine aldanmayın. Eğer ses üzerinde daha sofistike değişiklikler yapmayı planlıyorsanız göründüğünden
+çok daha derinlere gidebilirsiniz.Kemerlerinizi bağlayın!
