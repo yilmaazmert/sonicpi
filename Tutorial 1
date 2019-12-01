@@ -1,0 +1,37 @@
+Başlamak için öncelikle aşağıdaki kodu boş bir sayfaya gir:
+
+live_loop :flibble do
+  sample :bd_haus, rate: 1
+  sleep 0.5
+end
+Şimdi ''Run'' butonuna basara ilk davul seslerini dinleyebilirsin.İstediğin zaman ise ''Stop'' butonuna basarak durdurabilirsin. Şimdi, aşağıdaki adımları izle:
+''Sleep'' değerini ''1'' yap.
+''Run'' butonuna bas.
+Davul sesinin nasıl değiştini fark ettin mi ? .
+Tamam, bu kadar basitti. Karışıma başka bir şey ekleyelim. Yukarıdaki örnek: bd_haus satır örneği ekleyin: ambi_choir, rate: 0.3. Kodunuz şöyle görünmelidir:
+live_loop :flibble do
+  sample :ambi_choir, rate: 0.3
+  sample :bd_haus, rate: 1
+  sleep 1
+endCopy
+Hızları değiştir - yüksek değerler veya küçük değerler veya negatif değerler kullandığınızda ne olur? Oranı: değerini: ambi_choir örneği için yalnızca biraz değiştirdiğinizde ne olduğunu görün (0.29'a kadar). Gerçekten küçük bir ''sleep'' değeri seçerseniz ne olur? Gördüğünüz kadar hızlı gidebiliyor musunuz, bilgisayarınız bir hata ile duracaktır, çünkü devam edemez (bu olursa, daha büyük bir ''sleep'' süresi seçin ve tekrar ''Run'' düğmesine basın).
+
+Başına bir # ekleyerek örnek satırlardan birini yorumlamayı deneyin:
+
+live_loop :flibble do
+  sample :ambi_choir, rate: 0.3
+#  sample :bd_haus, rate: 1
+  sleep 1
+endCopy
+Bilgisayara onu görmezden gelmesini söylediğine dikkat edin, bu yüzden duymuyoruz. Buna ''comment'' denir. Sonic Pi'de, karışımdaki şeyleri kaldırmak ve eklemek için yorumları kullanabiliriz.
+
+Sonunda, sana oynayacak eğlenceli bir şey bırakmama izin ver. Aşağıdaki kodu alın ve yedek bir belleğe kopyalayın. Şimdi, iki döngü olduğunu görmekten başka bir şeyi anlamaya çalışmayın - yani iki şey aynı anda devam eder. Şimdi, en iyi yaptığınız şeyi yapın - deneyimleyin ve oyun oynayın. İşte bazı öneriler:
+
+
+629/5000
+Mavi hızı değiştirmeyi deneyin: örnek ses değişikliğini duyan değerler.
+Uyku saatlerini değiştirmeyi deneyin ve her iki döngünün de farklı hızlarda dönebileceğini duyun.
+Örnek çizgisini yorumlamayı deneyin (# işaretini kaldırın) ve geri çalınan gitarın sesini dinleyin.
+Mavi karışımlardan herhangi birini değiştirmeyi deneyin: 0 (karışımda değil) ve 1 (karışımda tamamen) arasındaki rakamlar.
+Çalıştır'a basmayı unutmayın; döngünün bir sonraki turunda değişikliği duyacaksınız. Bir turşu ile karşılaşırsanız, endişelenmeyin - Durdur'a basın, tampondaki kodu silin ve yeni bir kopyayı yapıştırın ve tekrar sıkışmaya hazırsınız. Hata yapmak en hızlı nasıl öğreneceğinizdir…
+
