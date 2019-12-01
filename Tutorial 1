@@ -34,4 +34,20 @@ Uyku saatlerini değiştirmeyi deneyin ve her iki döngünün de farklı hızlar
 Örnek çizgisini yorumlamayı deneyin (# işaretini kaldırın) ve geri çalınan gitarın sesini dinleyin.
 Mavi karışımlardan herhangi birini değiştirmeyi deneyin: 0 (karışımda değil) ve 1 (karışımda tamamen) arasındaki rakamlar.
 Çalıştır'a basmayı unutmayın; döngünün bir sonraki turunda değişikliği duyacaksınız. Bir turşu ile karşılaşırsanız, endişelenmeyin - Durdur'a basın, tampondaki kodu silin ve yeni bir kopyayı yapıştırın ve tekrar sıkışmaya hazırsınız. Hata yapmak en hızlı nasıl öğreneceğinizdir…
+live_loop :guit do
+  with_fx :echo, mix: 0.3, phase: 0.25 do
+    sample :guit_em9, rate: 0.5
+  end
+#  sample :guit_em9, rate: -0.5
+  sleep 8
+end
 
+live_loop :boom do
+  with_fx :reverb, room: 1 do
+    sample :bd_boom, amp: 10, rate: 1
+  end
+  sleep 8
+end
+Şimdi, tüm bunların gerçekte nasıl çalıştığı konusundaki merakınız ve bu konuda başka neler yapabileceğinizi merak etmeye başlayana kadar oynamaya ve deney yapmaya devam edin. Artık öğreticinin geri kalanını okumaya hazırsınız.
+
+Öyleyse ne bekliyorsun…
